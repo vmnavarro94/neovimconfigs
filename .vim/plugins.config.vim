@@ -88,6 +88,27 @@ nmap <silent> gr <Plug>(coc-references)
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
+autocmd BufEnter *.js :silent let myIndex = SearchPatternInFile("@flow") | call SwitchFlowOrTsLsps(myIndex)
+autocmd BufEnter *.jsx :silent let myIndex = SearchPatternInFile("@flow") | call SwitchFlowOrTsLsps(myIndex)
+
+function! SwitchFlowOrTsLsps(flowIndex)
+  silent let stats = CocAction("extensionStats")
+  silent let tsserver = get(filter(copy(stats), function('FindTsServer')), 0)
+  if(a:flowIndex == 0)
+    if(tsserver.state == 'disabled')
+      call CocActionAsync("toggleExtension", "coc-tsserver")
+    endif
+  else
+    if(tsserver.state == 'activated')
+      call CocActionAsync("toggleExtension", "coc-tsserver")
+    endif
+  endif
+endfunction
+
+function! FindTsServer(idx, value) 
+  return a:value.id == 'coc-tsserver'
+endfunction
+
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 function! FloatingFZF()
