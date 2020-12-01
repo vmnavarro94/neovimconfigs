@@ -2,7 +2,7 @@ set number
 set mouse=a
 set numberwidth=1
 set clipboard=unnamed
-syntax enable
+syntax on
 set showcmd
 set ruler
 set cursorline
@@ -24,8 +24,8 @@ let g:deoplete#enable_at_startup = 1
 let g:jsx_ext_required = 0
 
 " Javascript
-autocmd BufRead *.js set filetype=javascript.jsx
-autocmd BufRead *.jsx set filetype=javascript.jsx
+autocmd BufRead *.js set filetype=javascript
+autocmd BufRead *.jsx set filetype=javascript
 augroup filetype javascript syntax=javascript
 
 "" Searching
