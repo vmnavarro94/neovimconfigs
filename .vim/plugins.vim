@@ -10,14 +10,18 @@ Plug 'flowtype/vim-flow'
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-buftabline'
 
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Tree
 Plug 'scrooloose/nerdtree'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " typing
 Plug 'alvan/vim-closetag'

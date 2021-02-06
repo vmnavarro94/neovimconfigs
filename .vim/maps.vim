@@ -9,20 +9,27 @@ nnoremap <Leader>< 10<C-w><
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprev<CR>
+nnoremap <silent> W :bdelete<CR>
+
 " plugs
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>r :RnvimrToggle<CR>
+
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
+map <Leader>bl :BLines<CR>
 
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 
 " shorter commands
-cnoreabbrev tree NERDTreeToggle
+"cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
-cnoreabbrev find NERDTreeFind
+"cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
 
 "Run current file
@@ -36,11 +43,11 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <Leader> cr :CocRestart<CR>
 
 " Use ctrl+space to trigger completion
-if &filetype == "javascript" || &filetype == "python"
-  inoremap <c-space> <C-x><C-u>
-else
-  inoremap <silent><expr> <c-space> coc#refresh()
-endif
+"if &filetype == "javascript" || &filetype == "python"
+inoremap <c-space> <C-x><C-u>
+"else
+"  inoremap <silent><expr> <c-space> coc#refresh()
+"endif
 
 set splitright
 function! OpenTerminal()

@@ -18,7 +18,7 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'cocstatus': 'coc#status'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \'colorscheme': 'onedark',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
@@ -27,13 +27,19 @@ let g:lightline = {
 
 "  nerdtree
 let NERDTreeShowHidden=1
-" let NERDTreeQuitOnOpen=1
-let NERDTreeAutoDeleteBuffer=1
+let NERDTreeQuitOnOpen=1
+"let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
-let NERDTreeMapOpenInTab='\t'
+let g:NERDTreeHijackNetrw = 0
+"let NERDTreeMapOpenInTab='\t'
+
+let g:rnvimr_ex_enable = 1
+let g:ranger_map_keys = 0
 let g:javascript_plugin_flow = 1
+
+
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.vim/UltiSnips']
@@ -42,12 +48,14 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " kite
-let g:kite_supported_languages = ['javascript', 'python']
+let g:kite_supported_languages = ['*']
  
+autocmd FileType markdown let b:coc_suggest_disable = 1
+
 " coc
-autocmd FileType python let b:coc_suggest_disable = 1
-autocmd FileType javascript let b:coc_suggest_disable = 1
-autocmd FileType scss setl iskeyword+=@-@
+" autocmd FileType python let b:coc_suggest_disable = 1
+" autocmd FileType javascript let b:coc_suggest_disable = 1
+" autocmd FileType scss setl iskeyword+=@-@
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -83,15 +91,6 @@ set signcolumn=yes
 
 " fugitive always vertical diffing
 set diffopt+=vertical
-
-" Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
-
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
