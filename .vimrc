@@ -18,8 +18,12 @@ so ~/config/.vim/plugins.vim
 so ~/config/.vim/plugins.config.vim
 so ~/config/.vim/maps.vim
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+"colorscheme gruvbox
+"colorscheme dracula
+"colorscheme onehalfdark
+"let g:airline_theme='onehalfdark'
+"let g:gruvbox_contrast_dark = "hard"
+colorscheme onedark
 let g:deoplete#enable_at_startup = 1
 let g:jsx_ext_required = 0
 
