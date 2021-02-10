@@ -19,7 +19,7 @@ nmap <Leader>nt :NERDTreeFind<CR>
 nmap <Leader>r :RnvimrToggle<CR>
 
 map <Leader>p :Files<CR>
-map <Leader>ag :Ag<CR>
+map <Leader>ag :Rg<CR>
 map <Leader>bl :BLines<CR>
 
 nmap <Leader>w :w<CR>
