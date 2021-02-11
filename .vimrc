@@ -2,6 +2,7 @@ set number
 set mouse=a
 set numberwidth=1
 set clipboard=unnamed
+set encoding=UTF-8
 syntax on
 set showcmd
 set ruler

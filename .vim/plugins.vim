@@ -49,6 +49,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ryanoasis/vim-devicons'
 
 " git
 Plug 'tpope/vim-fugitive'
