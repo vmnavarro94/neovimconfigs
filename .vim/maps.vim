@@ -44,9 +44,9 @@ nmap <Leader> cr :CocRestart<CR>
 
 " Use ctrl+space to trigger completion
 "if &filetype == "javascript" || &filetype == "python"
-inoremap <c-space> <C-x><C-u>
+"inoremap <c-space> <C-x><C-u>
 "else
-"  inoremap <silent><expr> <c-space> coc#refresh()
+  inoremap <silent><expr> <c-space> coc#refresh()
 "endif
 
 set splitright

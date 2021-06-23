@@ -38,6 +38,7 @@ let g:NERDTreeHijackNetrw = 0
 let g:rnvimr_ex_enable = 1
 let g:ranger_map_keys = 0
 let g:javascript_plugin_flow = 1
+let g:tagalong_additional_filetypes = ['typescript', 'javascript']
 
 
 
@@ -48,9 +49,9 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " kite
-let g:kite_supported_languages = ['*']
+" let g:kite_supported_languages = ['*']
  
-autocmd FileType markdown let b:coc_suggest_disable = 1
+" autocmd FileType markdown let b:coc_suggest_disable = 1
 
 " coc
 " autocmd FileType python let b:coc_suggest_disable = 1

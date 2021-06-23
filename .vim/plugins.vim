@@ -21,12 +21,13 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Tree
 Plug 'scrooloose/nerdtree'
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'kevinhwang91/rnvimr'
 
 " typing
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/tagalong.vim'
 
 " tmux
 Plug 'benmills/vimux'
