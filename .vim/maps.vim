@@ -16,7 +16,7 @@ nnoremap <silent> W :bdelete<CR>
 " plugs
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
-nmap <Leader>r :RnvimrToggle<CR>
+map <leader>r :Ranger<CR>
 
 map <Leader>p :Files<CR>
 map <Leader>ag :Rg<CR>

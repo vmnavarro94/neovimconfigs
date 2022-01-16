@@ -33,10 +33,9 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let g:NERDTreeHijackNetrw = 0
-"let NERDTreeMapOpenInTab='\t'
+let g:ranger_replace_netrw = 1
+let NERDTreeMapOpenInTab='\t'
 
-let g:rnvimr_ex_enable = 1
-let g:ranger_map_keys = 0
 let g:javascript_plugin_flow = 1
 let g:tagalong_additional_filetypes = ['typescript', 'javascript']
 

@@ -21,7 +21,9 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Tree
 Plug 'scrooloose/nerdtree'
-Plug 'kevinhwang91/rnvimr'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
+
 
 " typing
 Plug 'alvan/vim-closetag'
