@@ -6,6 +6,8 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'flowtype/vim-flow'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -30,6 +32,7 @@ Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
+Plug 'sbdchd/neoformat'
 
 " tmux
 Plug 'benmills/vimux'

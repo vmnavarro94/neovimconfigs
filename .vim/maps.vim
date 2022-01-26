@@ -27,9 +27,9 @@ nmap <Leader>q :q<CR>
 nmap <Leader>wq :wq<CR>
 
 " shorter commands
-"cnoreabbrev tree NERDTreeToggle
+cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame
-"cnoreabbrev find NERDTreeFind
+cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
 
 "Run current file
@@ -42,12 +42,12 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <Leader> cr :CocRestart<CR>
 
+"comment
+map <C-a> :call Comment()<CR>
+map <C-b> :call Uncomment()<CR>
+
 " Use ctrl+space to trigger completion
-"if &filetype == "javascript" || &filetype == "python"
-"inoremap <c-space> <C-x><C-u>
-"else
-  inoremap <silent><expr> <c-space> coc#refresh()
-"endif
+inoremap <silent><expr> <c-space> coc#refresh()
 
 set splitright
 function! OpenTerminal()

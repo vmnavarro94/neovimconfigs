@@ -18,6 +18,7 @@ set noshowmode
 so ~/config/.vim/plugins.vim
 so ~/config/.vim/plugins.config.vim
 so ~/config/.vim/maps.vim
+so ~/config/.vim/vcomments.vim
 
 "colorscheme gruvbox
 "colorscheme dracula
@@ -32,6 +33,7 @@ let g:jsx_ext_required = 0
 autocmd BufRead *.js set filetype=javascript
 autocmd BufRead *.jsx set filetype=javascript
 augroup filetype javascript syntax=javascript
+autocmd BufWritePre *.js Neoformat
 
 "" Searching
 set hlsearch                    " highlight matches

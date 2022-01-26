@@ -26,14 +26,15 @@ let g:lightline = {
       \}
 
 "  nerdtree
+let g:NERDTreeHijackNetrw = 0
+let g:ranger_replace_netrw = 1
+let NERDTreeMapOpenInTab='\t'
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
-"let NERDTreeAutoDeleteBuffer=1
+let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
-let g:NERDTreeHijackNetrw = 0
-let g:ranger_replace_netrw = 1
 let NERDTreeMapOpenInTab='\t'
 
 let g:javascript_plugin_flow = 1
@@ -44,6 +45,7 @@ let g:tagalong_additional_filetypes = ['typescript', 'javascript']
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<C-_>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
