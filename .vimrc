@@ -33,10 +33,15 @@ let g:jsx_ext_required = 0
 autocmd BufRead *.js set filetype=javascript
 autocmd BufRead *.jsx set filetype=javascript
 augroup filetype javascript syntax=javascript
-autocmd BufWritePre *.js Neoformat
 
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+"" Prettier
+let g:prettier#quickfix_enabled = 0
+autocmd TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx PrettierAsync
+
+

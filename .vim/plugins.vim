@@ -32,7 +32,7 @@ Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'sbdchd/neoformat'
+
 
 " tmux
 Plug 'benmills/vimux'
@@ -56,6 +56,8 @@ Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
 
 " git
 Plug 'tpope/vim-fugitive'
